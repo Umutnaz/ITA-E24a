@@ -66,5 +66,3 @@ function CD(artist, title, numberOfTracks) {
     return this.artist + " " + this.title;
   };
 }
-
-const
