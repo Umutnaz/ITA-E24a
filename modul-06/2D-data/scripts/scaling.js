@@ -41,7 +41,7 @@ for (let n in numbers) {
   console.log("scaled value: " + Math.round(yScaleOLD(numbers[n])));
 }
 
-//For two-dimensional data
+//For to-dimensionelt data
 const data = [
   [5, 20],
   [480, 90],
