@@ -8,13 +8,13 @@ const dataset = [
   [475, 44],
 ];
 
-//Udskriver: ?
+//Udskriver: ? Den udskriver hele første array som er 5 og 20
 console.log(dataset[0]);
-//Udskriver: ?
+//Udskriver: ? Den udskriver 5
 console.log(dataset[0][0]);
-//Udskriver: ?
+//Udskriver: ? Den udskriver 480
 console.log(dataset[1][0]);
-//Udskriver: ?
+//Udskriver: ? Den udskriver 33
 console.log(dataset[3][1]);
-//Udskriver: ?
+//Udskriver: ? Den udskriver 95
 console.log(dataset[4][1]);

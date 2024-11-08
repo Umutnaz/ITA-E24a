@@ -3,8 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <title>Scatter Plot Animation</title>
+    <style>
+      #btn {
+        position: absolute;
+      }
+      #btn1 {
+        position: absolute;
+        top: 100px;
+      }
+    </style>
   </head>
   <body>
+    <button id="btn" onclick="btn()">circle</button>
+    <button id="btn1" onclick="btn1()">colorchanging</button>
     <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
     <script src="scripts/circle-animation.js"></script>
 

@@ -1,7 +1,8 @@
 //Width og height til SVG-elementet
-const w = 500;
-const h = 100;
-
+const w = 1000;
+const h = 1000;
+//kalder w (width) for 500
+//kalder h (height) for 100
 const dataset = [
   [5, 20],
   [480, 90],
@@ -11,9 +12,15 @@ const dataset = [
   [410, 12],
   [475, 44],
 ];
+dataset.sort(function (a, b) {
+  return a[0] - b[0];
+});
+console.log(dataset);
+//dataset
 
 //SVG-elementet
 const svg = d3.select("body").append("svg").attr("width", w).attr("height", h);
+//ligger height på consten h og modsat med w
 
 //Scatter plot
 svg
@@ -31,5 +38,9 @@ svg
     //Anden værdi i indre array (y)
     return d[1];
   })
-  //Radius er en konstant på '5'
-  .attr("r", 5);
+  .attr("r", function (d) {
+    return d[1] / 4;
+  })
+  .attr("fill", function (d) {
+    return d3.interpolateBlues(d[1] / 100); // Normalize color value
+  });
